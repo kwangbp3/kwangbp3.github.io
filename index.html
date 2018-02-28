@@ -10,6 +10,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="lib/easytimer/dist/easytimer.min.js"></script>
 		<script> 
+		$(document).ready(function(){
 			var timer = new Timer();
 			$('#chronoExample .startButton').click(function () {
 			    timer.start();
@@ -32,6 +33,7 @@
 			timer.addEventListener('reset', function (e) {
 			    $('#chronoExample .values').html(timer.getTimeValues().toString());
 			});   
+		});
 		</script>
 		<title>
 			Welcome to Kristian's Debate Toolkit
